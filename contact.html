@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us - Roma's</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	</head>
+
+	<body>
+		<?php echo $nav ?>
+		<!-- This wont work on replit -->
+
+		<div class="navbar">
+			<div class="navbar-logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="Logo" />
+				</a>
+			</div>
+			<div class="navbar-menu">
+				<a href="index.html" class="nav-item">Home</a>
+				<a href="menu.html" class="nav-item">Menu</a>
+				<a href="about.html" class="nav-item">About Us</a>
+				<a href="promos.html" class="nav-item">Promotions</a>
+				<a href="contact.html" class="nav-item">Contact Us</a>
+				<a href="#" class="nav-item">
+					<button class="nav-button">Order Online</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="contact-banner">
+			<h1>Contact Us</h1>
+		</div>
+
+		<div class="c-wrapper">
+			<section class="cols">
+				<div class="col">
+					<h1>Hours</h1>
+					<h3>
+						Join us at our delightful restaurant, place an order for pickup/delivery, or inquire about catering
+						services!
+					</h3>
+					<ul class="hours">
+						<li style="color: #008c45">
+							<b>10:00 AM - 10:30 PM</b>
+						</li>
+						<li><b>Tuesday - Sunday</b></li>
+					</ul>
+					<ul class="hours">
+						<li style="color: #cd121a"><b>Closed on Monday</b></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h1>Reach Out</h1>
+					<h3>Feel free to reach out at any of the links below.</h3>
+					<ul class="unstyled inline">
+						<li>
+							<a href="tel:(214)-373-0500" target="_blank"><i class="fa-solid fa-phone"></i></a>
+						</li>
+						<li><a class="links" href="tel:(214)-373-0500" target="_blank">(214)-373-0500</a></li>
+					</ul>
+					<ul class="unstyled inline">
+						<li>
+							<a href="mailto:manager@romasdallas.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+						</li>
+						<li><a class="links" href="mailto:manager@romasdallas.com">manager@romasdallas.com</a></li>
+					</ul>
+					<ul class="unstyled inline">
+						<li>
+							<a href="" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+						</li>
+						<li>
+							<a class="links" href="https://maps.app.goo.gl/vVY8QDRWaMRh36cW6" target="_blank"
+								>7033 Greenville Ave. Dallas, TX 75231
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col socials">
+					<h1>Social Media</h1>
+					<ul class="unstyled inline">
+						<li>
+							<a href="https://www.instagram.com/romasitaliadallas/?hl=en" target="_blank"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a class="links" href="https://www.instagram.com/romasitaliadallas/?hl=en" target="_blank"
+								>Instagram</a
+							>
+						</li>
+					</ul>
+
+					<ul class="unstyled inline">
+						<li>
+							<a href="https://www.facebook.com/RomasDallas" target="_blank"
+								><i class="fa-brands fa-facebook"></i
+							></a>
+						</li>
+						<li><a class="links" href="https://www.facebook.com/RomasDallas">Facebook</a></li>
+					</ul>
+
+					<ul class="unstyled inline">
+						<li>
+							<a href="https://www.linkedin.com/company/romaspizzadallas/" target="_blank"
+								><i class="fa-brands fa-linkedin"></i
+							></a>
+						</li>
+						<li>
+							<a class="links" href="https://www.linkedin.com/company/romaspizzadallas/" target="_blank"
+								>LinkedIn</a
+							>
+						</li>
+					</ul>
+
+					<ul class="unstyled inline">
+						<li>
+							<a href="https://twitter.com/romasdallas" target="_blank"
+								><i class="fa-brands fa-square-x-twitter"></i
+							></a>
+						</li>
+						<li><a class="links" href="https://twitter.com/romasdallas" target="_blank">Twitter/X</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="c-wrapper">
+			<div class="cols">
+				<div class="col">
+					<iframe
+						class="googlemap"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11270.991741326021!2d-96.76862973841374!3d32.874734710868836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c20bc20539d65%3A0x6b69d112fef285d7!2sRoma&#39;s%20Pizza%20%26%20Italian%20Restaurant!5e0!3m2!1sen!2sus!4v1712776834299!5m2!1sen!2sus"
+						width="800"
+						height="425"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="col">
+					<div class="form-wrapper">
+						<form action="post.php" method="post" class="contact-form" name="contact-form">
+							<div class="form-line">
+								<h3 class="form-text">Hi, I'm</h3>
+								<input
+									id="name"
+									class="form-field"
+									type="text"
+									maxlength="256"
+									name="name"
+									data-name="Name"
+									placeholder="Name*"
+									required="" />
+							</div>
+							<div class="form-line">
+								<h3 class="form-text">You can reach me at</h3>
+								<input
+									id="phone"
+									class="form-field"
+									type="tel"
+									maxlength="256"
+									name="phone"
+									data-name="phone"
+									placeholder="Phone*"
+									required="" />
+							</div>
+							<div class="form-line">
+								<h3 class="form-text">or at</h3>
+								<input
+									id="email"
+									class="form-field"
+									type="email"
+									maxlength="256"
+									name="email"
+									data-name="email"
+									placeholder="Email*"
+									required="" />
+							</div>
+							<div class="form-line">
+								<textarea
+									class="form-field message"
+									name="message"
+									id="message"
+									maxlength="5000"
+									placeholder="Message*"
+									required=""
+									spellcheck="false"
+									style="height: 112px"></textarea>
+							</div>
+							<div class="form-line">
+								<button class="form-submit" type="submit" value="Send Message">
+									Send Message <i class="fa-regular fa-paper-plane"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<?php echo $footer ?>
+		<!-- This wont work on replit -->
+
+		<footer class="footer">
+			<div class="footer-column">
+				<h3>Contact</h3>
+				<p>7033 Greenville Ave</p>
+				<p>Dallas, TX 75231</p>
+				<p>Phone: (214) 373-0500</p>
+				<p>Email: <a href="mailto:manager@romasdallas.com">manager@romasdallas.com</a></p>
+			</div>
+			<div class="footer-column">
+				<h3>Main Pages</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Order Online</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3>Hours</h3>
+				<p>Tuesday - Sunday: 10 a.m. - 10:30 p.m.</p>
+				<p>Monday: Closed</p>
+			</div>
+			<div class="footer-column">
+				<h3>Newsletter</h3>
+				<p>Sign up for our newsletter to receive updates and promotions:</p>
+				<form action="#" method="post">
+					<input type="email" name="email" placeholder="Your Email" required />
+					<button type="submit" class="nav-button">Subscribe</button>
+				</form>
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

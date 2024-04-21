@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Promotions - Roma's</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	</head>
+
+	<body>
+		<?php echo $nav ?>
+		<!-- This wont work on replit -->
+
+		<div class="navbar">
+			<div class="navbar-logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="Logo" />
+				</a>
+			</div>
+			<div class="navbar-menu">
+				<a href="index.html" class="nav-item">Home</a>
+				<a href="menu.html" class="nav-item">Menu</a>
+				<a href="about.html" class="nav-item">About Us</a>
+				<a href="promos.html" class="nav-item">Promotions</a>
+				<a href="contact.html" class="nav-item">Contact Us</a>
+				<a href="#" class="nav-item">
+					<button class="nav-button">Order Online</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="promo-banner">
+			<h1>Promotions & Offers</h1>
+		</div>
+
+		<br />
+		<div class="half-line"></div>
+		<section class="promofirst">
+			<div class="promofirst__text">
+				<h2>Catering From Roma's</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit
+					voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+					et quasi architecto beatae vitae dicta sunt explicabo.
+				</p>
+			</div>
+			<div class="promofirst__image">
+				<img src="images/catering.png" alt="Promo Image" />
+			</div>
+		</section>
+		<div class="half-line"></div>
+		<br />
+
+		<section class="promosecond">
+			<div class="promosecond__image">
+				<img src="images/promo1.png" alt="Promo Image 1" />
+			</div>
+			<div class="promosecond__image">
+				<img src="images/promo2.png" alt="Promo Image 2" />
+			</div>
+		</section>
+
+		<hr />
+		<br />
+		<section class="testimonial-carousel">
+			<h2>New Items & Limited Offers</h2>
+			<div class="carousel">
+				<div class="carousel-slides">
+					<img src="images/9.png" alt="Testimonial 1" />
+					<img src="images/10.png" alt="Testimonial 2" />
+					<img src="images/11.png" alt="Testimonial 3" />
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+			</div>
+		</section>
+		<hr />
+		<br />
+
+		<?php echo $footer ?>
+		<!-- This wont work on replit -->
+
+		<footer class="footer">
+			<div class="footer-column">
+				<h3>Contact</h3>
+				<p>7033 Greenville Ave</p>
+				<p>Dallas, TX 75231</p>
+				<p>Phone: (214) 373-0500</p>
+				<p>Email: <a href="mailto:manager@romasdallas.com">manager@romasdallas.com</a></p>
+			</div>
+			<div class="footer-column">
+				<h3>Main Pages</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="#">Order Online</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3>Hours</h3>
+				<p>Tuesday - Sunday: 10 a.m. - 10:30 p.m.</p>
+				<p>Monday: Closed</p>
+			</div>
+			<div class="footer-column">
+				<h3>Newsletter</h3>
+				<p>Sign up for our newsletter to receive updates and promotions:</p>
+				<form action="#" method="post">
+					<input type="email" name="email" placeholder="Your Email" required />
+					<button type="submit" class="nav-button">Subscribe</button>
+				</form>
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
