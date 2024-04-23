@@ -7,16 +7,13 @@
 		<title>Menu - Roma's</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-		<!-- Font Awesome CSS -->
 	</head>
 
 	<body>
 		<?php echo $nav ?>
-		<!-- This wont work on replit -->
 
 		<div class="navbar">
 			<div class="navbar-logo">
-				<!-- Replace with your logo -->
 				<img src="images/logo.png" alt="Logo" />
 			</div>
 			<div class="navbar-menu">
@@ -30,5 +27,223 @@
 				</a>
 			</div>
 		</div>
+		<section class="order-header">
+			<div class="order-header-txt">
+				<h1>Order Online</h1>
+				<h2>Take-Out & Pick up</h2>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<h2 class="flag-border">Popular Dishes</h2>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-2">
+						<div class="box">
+							<div class="order-image one">
+								<div class="order-image-txt">
+									<h3>8" Cheese Pizza</h3>
+									<p>$9.99</p>
+								</div>
+							</div>
+
+							<form class="add-to-cart">
+								<div class="number-wrapper">
+									<span class="minus prevent-select">-</span>
+									<span class="num prevent-select">01</span>
+									<span class="plus prevent-select">+</span>
+								</div>
+								<input type="hidden" name="PID" value="14" />
+								<input class="cart-button" type="submit" value="Add to Cart" />
+								<input type="hidden" name="action" value="Add" />
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-2">
+						<div class="box">
+							<div class="order-image two">
+								<div class="order-image-txt">
+									<h3>Tour of Italy</h3>
+									<p>$18.99</p>
+								</div>
+							</div>
+
+							<form class="add-to-cart">
+								<div class="number-wrapper">
+									<span class="minus prevent-select">-</span>
+									<span class="num prevent-select">01</span>
+									<span class="plus prevent-select">+</span>
+								</div>
+								<input type="hidden" name="PID" value="14" />
+								<input class="cart-button" type="submit" value="Add to Cart" />
+								<input type="hidden" name="action" value="Add" />
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-2">
+						<div class="box">
+							<div class="order-image three">
+								<div class="order-image-txt">
+									<h3>Chicken Parmigiana</h3>
+									<p>$14.99</p>
+								</div>
+							</div>
+
+							<form class="add-to-cart">
+								<div class="number-wrapper">
+									<span class="minus prevent-select">-</span>
+									<span class="num prevent-select">01</span>
+									<span class="plus prevent-select">+</span>
+								</div>
+								<input type="hidden" name="PID" value="14" />
+								<input class="cart-button" type="submit" value="Add to Cart" />
+								<input type="hidden" name="action" value="Add" />
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-2">
+						<div class="box">
+							<div class="order-image four">
+								<div class="order-image-txt">
+									<h3>Chicken Fettucini Alfredo</h3>
+									<p>$15.99</p>
+								</div>
+							</div>
+
+							<form class="add-to-cart">
+								<div class="number-wrapper">
+									<span class="minus prevent-select">-</span>
+									<span class="num prevent-select">01</span>
+									<span class="plus prevent-select">+</span>
+								</div>
+								<input type="hidden" name="PID" value="14" />
+								<input class="cart-button" type="submit" value="Add to Cart" />
+								<input type="hidden" name="action" value="Add" />
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-2">
+						<div class="box">
+							<div class="order-image five">
+								<div class="order-image-txt">
+									<h3>Spaghetti</h3>
+									<p>$12.99</p>
+								</div>
+							</div>
+
+							<form class="add-to-cart">
+								<div class="number-wrapper">
+									<span class="minus prevent-select">-</span>
+									<span class="num prevent-select">01</span>
+									<span class="plus prevent-select">+</span>
+								</div>
+								<input type="hidden" name="PID" value="14" />
+								<input class="cart-button" type="submit" value="Add to Cart" />
+								<input type="hidden" name="action" value="Add" />
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 col-lg-2">
+						<div class="box">
+							<div class="order-image six">
+								<div class="order-image-txt">
+									<h3>Garlic Rolls</h3>
+									<p>$5.99</p>
+								</div>
+							</div>
+
+							<form class="add-to-cart">
+								<div class="number-wrapper">
+									<span class="minus prevent-select">-</span>
+									<span class="num prevent-select">01</span>
+									<span class="plus prevent-select">+</span>
+								</div>
+								<input type="hidden" name="PID" value="14" />
+								<input class="cart-button" type="submit" value="Add to Cart" />
+								<input type="hidden" name="action" value="Add" />
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="load-more">Load More</div>
+			</div>
+		</section>
+
+		<?php echo $footer ?>
+		<!-- This wont work on replit -->
+
+		<footer class="footer">
+			<div class="footer-column">
+				<h3>Contact</h3>
+				<p>7033 Greenville Ave</p>
+				<p>Dallas, TX 75231</p>
+				<p>Phone: (214) 373-0500</p>
+				<p>Email: <a href="mailto:manager@romasdallas.com">manager@romasdallas.com</a></p>
+			</div>
+			<div class="footer-column">
+				<h3>Main Pages</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Order Online</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3>Hours</h3>
+				<p>Tuesday - Sunday: 10 a.m. - 10:30 p.m.</p>
+				<p>Monday: Closed</p>
+			</div>
+			<div class="footer-column">
+				<h3>Newsletter</h3>
+				<p>Sign up for our newsletter to receive updates and promotions:</p>
+				<form action="#" method="post">
+					<input type="email" name="email" placeholder="Your Email" required />
+					<button type="submit" class="nav-button">Subscribe</button>
+				</form>
+				<div class="social-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</footer>
+		<script>
+			const plusButtons = document.querySelectorAll(".plus");
+			const minusButtons = document.querySelectorAll(".minus");
+			const quantityInputs = document.querySelectorAll(".num");
+
+			plusButtons.forEach((plusButton, index) => {
+				plusButton.addEventListener("click", () => {
+					let a = parseInt(quantityInputs[index].innerText) + 1;
+					a = a < 10 ? "0" + a : a;
+					quantityInputs[index].innerText = a;
+				});
+			});
+
+			minusButtons.forEach((minusButton, index) => {
+				minusButton.addEventListener("click", () => {
+					// Ensure quantity doesn't go below 1
+					let newQuantity = Math.max(parseInt(quantityInputs[index].innerText) - 1, 1);
+					quantityInputs[index].innerText = newQuantity < 10 ? "0" + newQuantity : newQuantity;
+				});
+			});
+
+			let loadMoreBtn = document.querySelector("#load-more");
+			let currentItem = 3;
+
+			loadMoreBtn.onclick = () => {
+				let boxes = [...document.querySelectorAll(".box")];
+				for (var i = currentItem; i < currentItem + 3; i++) {
+					boxes[i].style.display = "inherit";
+				}
+				currentItem += 3;
+
+				if (currentItem >= boxes.length) {
+					loadMoreBtn.style.display = "none";
+				}
+			};
+		</script>
 	</body>
 </html>
