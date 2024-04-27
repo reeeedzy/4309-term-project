@@ -116,8 +116,6 @@ const imageArray = [
 	"images/shrimp.jpg",
 	"images/minestrone.jpg",
 	"images/basil.jpg",
-	"images/calzone.jpeg",
-	"images/cheese-pizza.avif",
 	"images/supreme.avif",
 	"images/margarita.avif",
 	"images/hawaiian.avif",
