@@ -13,21 +13,37 @@
 		<?php echo $nav ?>
 		<!-- This wont work on replit -->
 
-		<div class="navbar">
-			<div class="navbar-logo">
-				<a href="index.html">
-					<img src="images/logo.png" alt="Logo" />
-				</a>
-			</div>
-			<div class="navbar-menu">
-				<a href="index.html" class="nav-item">Home</a>
-				<a href="menu.html" class="nav-item">Menu</a>
-				<a href="about.html" class="nav-item">About Us</a>
-				<a href="promos.html" class="nav-item">Promotions</a>
-				<a href="contact.html" class="nav-item">Contact Us</a>
-				<a href="order.html" class="nav-item">
-					<button class="nav-button">Order Online</button>
-				</a>
+		<div class="container nav-container">
+			<div class="row">
+				<div class="col-xs-6">
+					<nav class="navbar">
+						<a class="navbar-brand" href="index.html">Navbar</a>
+						<button class="navbar-toggler" type="button" data-target="#navigation">
+							<span class="fa-solid fa-bars fa-xl"></span>
+						</button>
+
+						<div class="navigation collapse" id="navigation">
+							<ul class="navbar-nav">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="about.html">About Us</a>
+								</li>
+								<li>
+									<a href="promos.html">Promotions</a>
+								</li>
+								<li class="active">
+									<a href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
+								</li>
+
+								<li>
+									<a class="order" href="order.html">Order Online</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
 
@@ -215,8 +231,8 @@
 				<h3>Main Pages</h3>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="menu.html">Menu</a></li>
 					<li><a href="about.html">About Us</a></li>
+					<li><a href="promos.html">Promotions</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 					<li><a href="order.html">Order Online</a></li>
 				</ul>

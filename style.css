@@ -1,7 +1,7 @@
 /*
   Created by: Reed Turner & Michael Pacheco
   Created on: 4/2/24
-  Updated on: 4/21/24
+  Updated on: 4/27/24
   Project: Term Project - Roma's Pizza & Italian Restaurant
   Description: This is the stylesheet for the entire website redesign
 */
@@ -161,61 +161,144 @@ img {
 	padding: 0px 0;
 }
 
-/* Navigation Bar Styles */
+/* *Navigation Styles */
 .navbar {
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: var(--bg-color2);
-	padding: 10px 20px;
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	align-content: flex-start;
 }
 
-.navbar-logo img {
-	width: 175px;
-	height: auto;
-}
-
-.navbar-menu {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-right: 20px;
-}
-
-.nav-item {
-	margin-left: 20px;
-	margin-right: 20px;
-	color: var(--font-color);
+.navbar-brand {
+	display: block;
+	overflow: hidden;
+	background: url(images/logo.png) no-repeat left/contain transparent;
+	width: 10rem;
+	height: 4rem;
+	text-indent: -9999px;
 	text-decoration: none;
-	font-weight: bold;
-	position: relative;
-	transition: text-shadow 0.4s;
 }
 
-.nav-item:hover {
-	text-shadow: 0 0 5px white;
+.navbar-toggler {
+	background-color: var(--primary);
+	border: 0 none;
+	color: white;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	border-radius: 5px;
 }
 
-.nav-button {
-	background-color: #cd121a;
+.navigation {
+	flex: 0 0 100%;
+}
+
+.navigation.collapse .navbar-nav {
+	display: none;
+}
+
+.navbar-nav {
+	list-style-type: none;
+	padding: 0;
+}
+
+.navbar-nav li > a {
 	color: var(--font-color);
-	border: none;
-	padding: 8px 15px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: background-color 0.4s, color 0.4s;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: inherit;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	padding: calc((1em / var(--base-scale)) / var(--base-scale)) calc(1em / var(--base-scale));
+	margin: 0 0.25rem;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.4s;
 }
 
-.nav-button:hover {
-	background-color: #008c45;
-	color: var(--font-color);
+.navbar-nav li.active > a {
+	border-bottom: 1px solid transparent; /* Set a base transparent border */
+	position: relative; /* Make the element relative for pseudo-element positioning */
 }
+
+.navbar-nav li.active > a::after {
+	content: "";
+	position: absolute;
+	bottom: 0; /* Position at the bottom */
+	left: 10%; /* Align to the left edge */
+	width: 80%; /* Set width to 80% */
+	height: 3px; /* Set border thickness (adjust as needed) */
+	background-color: var(--primary); /* Set border color */
+}
+
+.navbar-nav li > a:hover {
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+.order {
+	background-color: var(--secondary);
+}
+
+.dropdown-toggle::after {
+	content: "\f0d8";
+	font-family: "FontAwesome";
+	font-weight: 400;
+	margin-left: var(--base-line-height);
+}
+
+.collapse > .dropdown-toggle::after {
+	content: "\f0d7";
+}
+
+.dropdown.collapse .dropdown-menu {
+	display: none;
+}
+
+.dropdown-menu {
+	background-color: var(--secondary);
+	font-weight: 700;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	text-align: center;
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.dropdown-menu > a {
+	flex: 1 0 100%;
+	color: var(--white);
+	padding: calc((1em / var(--base-scale)) / var(--base-scale)) calc(1em / var(--base-scale));
+	text-decoration: none;
+}
+
+.dropdown-menu > a:hover {
+	background-color: var(--secondary-hover);
+	color: var(--white);
+	border-radius: 5px;
+	scale: 1.05;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/* *End of Navigation Styles */
 
 /* Footer Styles */
 .footer {
@@ -325,7 +408,7 @@ img {
 .fstsect {
 	display: flex;
 	margin-bottom: 50px;
-	padding: 30px 60px;
+	padding: 30px 0;
 	justify-content: center;
 }
 
@@ -346,7 +429,6 @@ img {
 .fstsect__image-container img {
 	width: 100%;
 	/* Adjust as needed */
-	max-width: 300px;
 	/* Adjust as needed */
 	height: auto;
 	margin-bottom: 20px;
@@ -372,7 +454,7 @@ img {
 .fstsect__text-container p {
 	position: relative;
 	padding-top: 10px;
-	line-height: 1.35rem;
+	line-height: var(--base-line-height);
 }
 
 .fstsect__text-container p::before {
@@ -382,7 +464,7 @@ img {
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #cd121a;
+	background-color: var(--secondary);
 }
 
 /* Testimonials */
@@ -439,22 +521,26 @@ img {
 .second-section__icons {
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+	padding: 0 20px;
 }
 
-.second-section__icons a {
+.second-section__icons a i {
 	margin: 0 15px;
 	font-size: 2em;
 	color: #fff;
 	transition: color 0.3s ease-in-out;
 }
 
-.second-section__icons a:hover {
-	color: #f9a825;
+.second-section__icons a i:hover {
+	color: var(--primary);
 }
 
 .vip-heading {
 	color: #cd121a;
+}
+
+h2.flag-border {
+	padding: 2rem;
 }
 
 .social-offers-heading {
@@ -465,7 +551,6 @@ img {
 	width: 50%;
 	height: 4px;
 	/* Adjust as needed */
-	background-color: #f9a825;
 	/* Adjust color as needed */
 	margin: 0 auto;
 	/* Center the div */
@@ -534,25 +619,6 @@ img {
 	background-size: cover;
 	border-radius: 1rem;
 	box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.7);
-
-	&.one {
-		background-image: url(images/cheese-pizza.avif);
-	}
-	&.two {
-		background-image: url(images/tour-of-italy.avif);
-	}
-	&.three {
-		background-image: url(images/chicken-parm.avif);
-	}
-	&.four {
-		background-image: url(images/fettuccini-alfredo.avif);
-	}
-	&.five {
-		background-image: url(images/spaghetti.avif);
-	}
-	&.six {
-		background-image: url(images/garlic-rolls.avif);
-	}
 }
 
 .order-image-txt {
@@ -647,19 +713,6 @@ img {
 	scale: 1.05;
 }
 
-.box {
-	padding: var(--base-line-height) 0;
-	margin: 0;
-	display: none;
-}
-
-.box:nth-child(1),
-.box:nth-child(2),
-.box:nth-child(3) {
-	display: flex;
-	flex-flow: column;
-}
-
 #load-more {
 	padding: 0.5rem 1rem;
 	background-color: var(--secondary);
@@ -680,6 +733,7 @@ img {
 #load-more:hover {
 	background-color: var(--secondary-hover);
 }
+
 /* Menu Styles */
 .flag-border {
 	border-image: url(images/flag.png);
@@ -694,21 +748,27 @@ img {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: darken;
-	min-height: 65vh;
+	letter-spacing: 1rem;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: var(--font-color);
 	margin-bottom: 0.75rem;
+	text-align: center;
+
+	h1,
+	h2 {
+		text-transform: capitalize;
+	}
 }
 
 .anchor {
 	display: block;
-	padding-top: 60px;
-	margin-top: -60px;
+	padding-top: 45px;
+	margin-top: -45px;
 }
 
 header {
@@ -773,7 +833,6 @@ header {
 		box-shadow: inset 0 0 0.5rem hsl(0 0% 100% / 0.1), 0 0 0.75rem hsl(0 0% 0% / 0.3);
 	}
 }
-
 /* Contact Styles */
 .contact-banner {
 	background-image: url(images/orange-arrow.jpg);
@@ -781,6 +840,7 @@ header {
 	background-position: center;
 	background-size: cover;
 	min-height: 65vh;
+	letter-spacing: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -961,6 +1021,7 @@ li a i:hover {
 	background-position: center;
 	background-size: cover;
 	min-height: 65vh;
+	letter-spacing: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -1043,6 +1104,7 @@ li a i:hover {
 .promo-banner {
 	position: relative;
 	background-image: url(images/promoban.jpg);
+	letter-spacing: 1rem;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1134,6 +1196,14 @@ li a i:hover {
 	margin-bottom: 1.25rem;
 }
 
+.container-fluid {
+	padding: 0;
+}
+
+.container.nav-container {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
 @media screen and (min-width: 576px) {
 	.container {
 		max-width: 576px;
@@ -1280,6 +1350,27 @@ li a i:hover {
 
 /* Styles for 'col-md-...' grid */
 @media screen and (min-width: 768px) {
+	.navbar-toggler {
+		display: none;
+	}
+
+	.navigation {
+		flex: 0 0 auto;
+	}
+
+	.navigation.collapse .navbar-nav,
+	.navbar-nav {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		align-items: baseline;
+		align-content: center;
+	}
+
+	.dropdown-menu {
+		position: absolute;
+	}
+
 	.col-md-1 {
 		flex: 0 0 var(--col-1);
 		max-width: var(--col-1);
@@ -1399,33 +1490,6 @@ li a i:hover {
 
 /* Media query for phones (max-width: 768px) */
 @media only screen and (max-width: 768px) {
-	.navbar {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.navbar-logo {
-		margin-bottom: 10px;
-	}
-
-	.navbar-menu {
-		margin-top: 10px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.nav-item {
-		width: 100%;
-		margin: 10px 0;
-		border-bottom: 1px solid white;
-		padding-bottom: 5px;
-	}
-
-	.nav-item:last-child {
-		border-bottom: none;
-	}
-
 	.flex.wrapper {
 		justify-content: flex-start;
 		gap: 0rem;
@@ -1469,11 +1533,6 @@ li a i:hover {
 
 	.testimonial-carousel {
 		width: 90%;
-	}
-
-	.navbar-logo img {
-		width: 220px;
-		height: auto;
 	}
 
 	.fstsect {

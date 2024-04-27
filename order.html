@@ -7,168 +7,1286 @@
 		<title>Menu - Roma's</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+		<!-- Font Awesome CSS -->
 	</head>
 
 	<body>
-		<?php echo $nav ?>
+		<a id="top" class="anchor"></a>
 
-		<div class="navbar">
-			<div class="navbar-logo">
-				<img src="images/logo.png" alt="Logo" />
-			</div>
-			<div class="navbar-menu">
-				<a href="index.html" class="nav-item">Home</a>
-				<a href="menu.html" class="nav-item">Menu</a>
-				<a href="about.html" class="nav-item">About Us</a>
-				<a href="promos.html" class="nav-item">Promotions</a>
-				<a href="contact.html" class="nav-item">Contact Us</a>
-				<a href="order.html" class="nav-item">
-					<button class="nav-button">Order Online</button>
-				</a>
+		<?php echo $nav ?>
+		<!-- This wont work on replit -->
+
+		<div class="container nav-container">
+			<div class="row">
+				<div class="col-xs-6">
+					<nav class="navbar">
+						<a class="navbar-brand" href="index.html">Navbar</a>
+						<button class="navbar-toggler" type="button" data-target="#navigation">
+							<span class="fa-solid fa-bars fa-xl"></span>
+						</button>
+
+						<div class="navigation collapse" id="navigation">
+							<ul class="navbar-nav">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="about.html">About Us</a>
+								</li>
+								<li>
+									<a href="promos.html">Promotions</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact Us</a>
+								</li>
+
+								<li>
+									<a class="order" href="order.html">Order Online <span class="sr-only">(current)</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
-		<section class="order-header">
-			<div class="order-header-txt">
-				<h1>Order Online</h1>
-				<h2>Take-Out & Pick up</h2>
+		<div class="menu-banner">
+			<h1>Order Online</h1>
+			<h2>Take-Out & Pick up</h2>
+		</div>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#apps">Appetizers</a></li>
+					<li><a href="#soups">Soups & Salads</a></li>
+					<li><a href="#calzone">Calzones</a></li>
+					<li><a href="#pizza">Pizza</a></li>
+					<li><a href="#pasta">Pasta</a></li>
+					<li><a href="#specials">Specialties</a></li>
+					<li><a href="#entrees">Entrees</a></li>
+					<li><a href="#subs">Handhelds</a></li>
+					<li><a href="#desserts">Desserts</a></li>
+					<li><a href="#bevs">Beverages</a></li>
+					<li><a href="#top">Back to Top</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Popular Dishes</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>8" Cheese Pizza</h3>
+								<p>$9.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Tour of Italy</h3>
+								<p>$18.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Chicken Parmigiana</h3>
+								<p>$14.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Chicken Fettucini Alfredo</h3>
+								<p>$15.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Spaghetti</h3>
+								<p>$12.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Garlic Rolls</h3>
+								<p>$5.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
 			</div>
-		</section>
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6">
-						<h2 class="flag-border">Popular Dishes</h2>
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-2">
-						<div class="box">
-							<div class="order-image one">
-								<div class="order-image-txt">
-									<h3>8" Cheese Pizza</h3>
-									<p>$9.99</p>
-								</div>
+		</div>
+		<a id="apps" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Appetizers</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Appetizer Sampler</h3>
+								<p>$12.99</p>
 							</div>
-
-							<form class="add-to-cart">
-								<div class="number-wrapper">
-									<span class="minus prevent-select">-</span>
-									<span class="num prevent-select">01</span>
-									<span class="plus prevent-select">+</span>
-								</div>
-								<input type="hidden" name="PID" value="14" />
-								<input class="cart-button" type="submit" value="Add to Cart" />
-								<input type="hidden" name="action" value="Add" />
-							</form>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-2">
-						<div class="box">
-							<div class="order-image two">
-								<div class="order-image-txt">
-									<h3>Tour of Italy</h3>
-									<p>$18.99</p>
-								</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
 							</div>
-
-							<form class="add-to-cart">
-								<div class="number-wrapper">
-									<span class="minus prevent-select">-</span>
-									<span class="num prevent-select">01</span>
-									<span class="plus prevent-select">+</span>
-								</div>
-								<input type="hidden" name="PID" value="14" />
-								<input class="cart-button" type="submit" value="Add to Cart" />
-								<input type="hidden" name="action" value="Add" />
-							</form>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Calamari</h3>
+								<p>$10.99</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-2">
-						<div class="box">
-							<div class="order-image three">
-								<div class="order-image-txt">
-									<h3>Chicken Parmigiana</h3>
-									<p>$14.99</p>
-								</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
 							</div>
-
-							<form class="add-to-cart">
-								<div class="number-wrapper">
-									<span class="minus prevent-select">-</span>
-									<span class="num prevent-select">01</span>
-									<span class="plus prevent-select">+</span>
-								</div>
-								<input type="hidden" name="PID" value="14" />
-								<input class="cart-button" type="submit" value="Add to Cart" />
-								<input type="hidden" name="action" value="Add" />
-							</form>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Bruschetta Bread</h3>
+								<p>$6.99</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-2">
-						<div class="box">
-							<div class="order-image four">
-								<div class="order-image-txt">
-									<h3>Chicken Fettucini Alfredo</h3>
-									<p>$15.99</p>
-								</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
 							</div>
-
-							<form class="add-to-cart">
-								<div class="number-wrapper">
-									<span class="minus prevent-select">-</span>
-									<span class="num prevent-select">01</span>
-									<span class="plus prevent-select">+</span>
-								</div>
-								<input type="hidden" name="PID" value="14" />
-								<input class="cart-button" type="submit" value="Add to Cart" />
-								<input type="hidden" name="action" value="Add" />
-							</form>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Fried Zucchini</h3>
+								<p>$9.99</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-2">
-						<div class="box">
-							<div class="order-image five">
-								<div class="order-image-txt">
-									<h3>Spaghetti</h3>
-									<p>$12.99</p>
-								</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
 							</div>
-
-							<form class="add-to-cart">
-								<div class="number-wrapper">
-									<span class="minus prevent-select">-</span>
-									<span class="num prevent-select">01</span>
-									<span class="plus prevent-select">+</span>
-								</div>
-								<input type="hidden" name="PID" value="14" />
-								<input class="cart-button" type="submit" value="Add to Cart" />
-								<input type="hidden" name="action" value="Add" />
-							</form>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Fried Cheese</h3>
+								<p>$8.99</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-md-3 col-lg-2">
-						<div class="box">
-							<div class="order-image six">
-								<div class="order-image-txt">
-									<h3>Garlic Rolls</h3>
-									<p>$5.99</p>
-								</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
 							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Hot Wings</h3>
+								<p>$12.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Stuffed Jalapenos</h3>
+								<p>$8.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Fried Artichoke</h3>
+								<p>$8.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Garlic Bread</h3>
+								<p>$4.99</p>
+							</div>
+						</div>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="soups" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Soups & Salads</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="order-image">
+							<div class="order-image-txt">
+								<h3>Grilled Salmon Salad</h3>
+								<p>18.99</p>
+							</div>
+						</div>
 
-							<form class="add-to-cart">
-								<div class="number-wrapper">
-									<span class="minus prevent-select">-</span>
-									<span class="num prevent-select">01</span>
-									<span class="plus prevent-select">+</span>
-								</div>
-								<input type="hidden" name="PID" value="14" />
-								<input class="cart-button" type="submit" value="Add to Cart" />
-								<input type="hidden" name="action" value="Add" />
-							</form>
+						<form class="add-to-cart">
+							<div class="number-wrapper">
+								<span class="minus prevent-select">-</span>
+								<span class="num prevent-select">01</span>
+								<span class="plus prevent-select">+</span>
+							</div>
+							<input type="hidden" name="PID" value="14" />
+							<input class="cart-button" type="submit" value="Add to Cart" />
+							<input type="hidden" name="action" value="Add" />
+						</form>
+
+						<div class="menu-img">
+							<img src="images/salmon-salad.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Grilled Salmon Salad</h3>
+							<p>
+								Fresh Romaine and Iceberg lettuce, fresh mushrooms, sliced olives, fresh tomatoes, & mozzarella
+								cheese
+							</p>
 						</div>
 					</div>
 				</div>
-				<div id="load-more" class="prevent-select">Load More</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/greek-chicken.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Greek Salad</h3>
+							<p>Fresh Romain and Iceberg lettuce, onions, kalamata olives, tomatoes & feta cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/house-salad.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>House Salad</h3>
+							<p>Fresh Romain and Iceberg lettuce, mozzarella cheese, black olive, tomatoes and peppers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/grilled-chicken-salad.webp" alt="" />
+						</div>
+						<div class="description">
+							<h3>Grilled Chicken Salad</h3>
+							<p>
+								Enjoy a finely-grilled chicken breast atop a bed of crisp romaine lettuce, complemented by your
+								choice of dressing
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/caesar.jpeg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Caesar Salad</h3>
+							<p>
+								Crispy Romain hearts, shredded parmigiana cheese, croutons, tomatoes and creamy Caesar dressing.
+								Add Chicken for $4
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/greek-salad.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Greek Salad</h3>
+							<p>
+								Iceberg lettuce and crispy Romain hearts, feta cheese, kalamata olives, onions, tomatoes and
+								peppers
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/shrimp.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Grilled Shrimp Salad</h3>
+							<p>
+								Fresh Romaine and Iceberg lettuce, fresh mushrooms, sliced olives, fresh tomatoes, & mozzarella
+								cheese
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/minestrone.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Minestrone Soup</h3>
+							<p>Hearty Italian vegetable soup made with tomato broth and rice</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/basil.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Tomato Basil Soup</h3>
+							<p>Rich and creamy, perfect for rainy days</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</section>
+		</div>
+		<a id="calzone" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Roma's Signature Calzones</h2>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/calzone.jpeg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<b>Meat Lovers</b>
+						</li>
+						<li class="text-center">Ricotta & mozzarella cheese with beef, sausage, pepperoni and Canadian bacon</li>
+					</ul>
+					<ul class="unstyled">
+						<li class="text-center">
+							<b>Veggie Lovers</b>
+						</li>
+						<li class="text-center">Ricotta & mozzarella cheese and mix fresh veggies</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<b>Beef/Sausage/Pepperoni</b>
+						</li>
+						<li class="text-center">Ricotta & mozzarella cheese with choice of beef, sausage or pepperoni</li>
+					</ul>
+					<ul class="unstyled">
+						<li class="text-center">
+							<b>Spinach</b>
+						</li>
+						<li class="text-center">Spinach, ricotta & mozzarella</li>
+					</ul>
+					<ul class="unstyled">
+						<li class="text-center">
+							<b>Stromboli</b>
+						</li>
+						<li class="text-center">Pepperoni, mushrooms, beef, & mozzarella cheese</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a id="pizza" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Roma's Hand Tossed Pizza</h2>
+				</div>
+
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<h3>Sizes</h3>
+						</li>
+						<li class="text-center"><h4>Personal: 8" = 1 Person</h4></li>
+						<li class="text-center"><h4>Small: 12" = 1-2 People</h4></li>
+						<li class="text-center"><h4>Medium: 14" = 2 People</h4></li>
+						<li class="text-center"><h4>Large: 16" = 3-4 People</h4></li>
+						<li class="text-center"><h4>Extra Large: 18" = 4-5 People</h4></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<h3>Toppings</h3>
+						</li>
+						<li class="text-center"><b>Meat</b></li>
+						<li class="text-center">Anchovies, Bacon, Canadian Bacon, Ham, Hamburger, Pepperoni, Salami, Sausage</li>
+						<li class="text-center"><b>Veggies</b></li>
+						<li class="text-center">
+							Artichoke Hearts, Black Olives, Broccoli, Fresh Garlic, Fresh Basil, Fresh Tomatoes, Green Olives,
+							Green Peppers, Jalapenos, Mushrooms, Onions, Pineapple, Spinach
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/cheese-pizza.avif" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<h2 class="flag-border">Roma's Signature Pizzas</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/supreme.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Roma's Supreme</h3>
+							<p>
+								Fresh Homemade Pizza Sauce, Pepperoni, Hamburger, Sausage, Green Pepper, Onion, Black Olives,
+								Mushrooms and Mozzarella Cheese
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/margarita.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Margarita</h3>
+							<p>
+								Homemade Pizza Sauce, Extra Virgin Oliive Oil, Fresh Tomatoes, Fresh Basil, Fresh Garlic, Parmesan
+								and Mozzarella Cheese
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/hawaiian.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Hawaiian</h3>
+							<p>Fresh Homemade Pizza Sauce, Whole Milk Mozzarella, Ham, Black Olives and Pineapple</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/prosciutto.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Prosciutto</h3>
+							<p>
+								Homemade Pizza Sauce, Extra Virgin Olive Oil, Prociutto, Roasted Red Peppers, Broccoli and
+								Gorgonzola
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/focaccia.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Focaccia</h3>
+							<p>
+								Homemade Pizza Sauce, Extra Virgin Olive Oil, Rosemary, Black Olives, Artichoke Hearts and
+								Gorgonzola
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/alfredo-pizza.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Alfredo</h3>
+							<p>Homemade Alfredo Sauce, Grilled Chicken and Mozzarella Cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/meat-lovers.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Meat Lovers</h3>
+							<p>Fresh Homemade Pizza Sauce, Pepperoni, Canadian Bacon, Sausage, Hamburger and Mozzarella Cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/veggie-pizza.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Veggie Lovers</h3>
+							<p>
+								Fresh Homemade Pizza Sauce, Fresh Tomatoes, Green Pepper, Onion, Black Olives, Spinach and
+								Mozzarella Cheese
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/four-cheese.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Four Cheese</h3>
+							<p>
+								Homemade Pizza Sauce, Extra Virgin Olive Oil, Whole Milk Mozzarella, ricotta, Feta and Gorgonzola
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="pasta" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Homemade Pasta</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/tour-of-italy.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Tour of Italy</h3>
+							<p>Chicken Parmigiana, Fettucini Alfredo and Lasagna</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/fettuccini.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Fettuccini Alfredo</h3>
+							<p>Our Homemade Alfredo Sauce, Served Over Fettuccini Pasta</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/meatball-parm.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Meatball Parmigiana</h3>
+							<p>Served with a side of spaghetti</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/spaghetti.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Spaghetti</h3>
+							<p>With your choice of meatballs, sausage, meat sauce or mushrooms</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/baked-ziti.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Baked Ziti</h3>
+							<p>Ziti pasta with marinara sauce, baked with mozzarella cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/meat-ravioli.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Meat Ravioli</h3>
+							<p>Meat Ravioli pasta with tomato sauce and cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/ravioli.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Ravioli</h3>
+							<p>Ravioli stuffed with cheese and served with our homemade pasta sauce</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/angel-hair-put.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Angel Hair Puttanesca</h3>
+							<p>
+								Sauteed green & black olives, capers, spinach, fresh garlic, and anchovies in white wine with a
+								touch of marinara sauce
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/pesto-penne.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Pesto Penne</h3>
+							<p>Penne pasta sauteed in a creamy pesto sauce</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/al-pana.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Tortellini Al Pana</h3>
+							<p>Sauteed onion and ham, alfredo sauce, over cheese tortellini pasta</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/tort.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Tortellini Alfredo</h3>
+							<p>Cheese tortellini served with alfredo sauce</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/prima.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Fettuccini Primavera</h3>
+							<p>Sauteed mixed vegetables, marinara sauce over fettuccini pasta</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="specials" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 id="specials" class="flag-border">House Specialties</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/picatta.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Picatta</h3>
+							<p>Grilled chicken sauteed in white wine, garlic, lemon butter sauce, capers & mushrooms</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/chicken-parm.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Parmigiana</h3>
+							<p>Breaded chicken sauteed with tomato sauce topped with Parmesan & mozzarella cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/florintini.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Florintini</h3>
+							<p>Grilled chicken sauteed with spinach, garlic & mushrooms & cream sauce</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/marsala.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Marsala</h3>
+							<p>Grilled chicken sauteed in butter, Marsala wine sauce, mushrooms & touch of cream</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/cacci.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Cacciatore</h3>
+							<p>
+								Grilled chicken sauteed with mushrooms, garlic, green peppers, black olives, & onions in white
+								wine & marinara sauce
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/carchi.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Carchioffi</h3>
+							<p>
+								Grilled chicken sauteed with artichoke hearts, garlic & mushrooms in sherry wine and cream sauce
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="entrees" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Entrees</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/seafood-special.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Seafood Special</h3>
+							<p>Sauted shrimp, clams, lobster & mussels in rosa wine sauce over liguini pasta</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/veal-parm.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Veal Parmigiana</h3>
+							<p>Breaded veal and pan fried topped with fresh tomato sauce and mozzarella</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/grilled-salmon.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Grilled Salmon</h3>
+							<p>Grilled Fresh Salmon served in lemon butter wine sauce and side of Broccoli</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/scampi.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Shrimp Scampi</h3>
+							<p>Sauteed shrimp in lemon butter white wine sauce, with Italian seasoning & side of spaghetti</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/diavolo.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Shrimp fra Diavolo</h3>
+							<p>Shrimp in spicy marinara sauce, green peppers, mushrooms , onions, garlic & side of spaghetti</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/clams&shrimp.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Linguine Clams & Shrimp</h3>
+							<p>Clams & shrimp sauteed in lemon butter, served with a side of linguine pasta</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/lobster-ravioli.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Lobster & Shrimp Ravioli</h3>
+							<p>Sauteed lobster and shrimp with ravioli & rosa wine cream sauce</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/tilapia.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Grilled Tilapia</h3>
+							<p>Grilled Tilapia served in lemon butter wine sauce with a side of Broccoli</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/veal-marsala.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Veal Marsala</h3>
+							<p>
+								Tender pieces of veal scallopini sauteed in butter, marsalla wine sauce, mushrooms & touch of
+								cream
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/veal-picatta.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Veal Picatta</h3>
+							<p>Tender veal sauted with capers & mushrooms, lemon butter sauce & white wine</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/cacci.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chicken Capri</h3>
+							<p>
+								Sauteed grilled chicken with fresh mushrooms, fresh garlic, artichoke hearts, capers, sun dried
+								tomatoes, spinach in white wine and lemon sauce over spaghettini pasta
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="subs" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Hot Subs</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/sausage-sub.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Sausage & Pepper Parmigiana</h3>
+							<p>Spicy Italian sausage and sauteed peppers smothered in melted mozzarella cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/meatball-sub.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Meatball Parmigiana</h3>
+							<p>Meatballs smothered in our house pasta sauce and loaded with melted mozzarella cheese</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/cheesesteak.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Philly Cheesesteak</h3>
+							<p>Philly Steak with mayo, green peppers, mushrooms, onions & french fries</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<h2 class="flag-border">Burgers</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/og-burger.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>The Original Burger</h3>
+							<p>
+								Served with fries, mayonnaise, lettuce, tomatoes, onions, and pickles - Add cheese for no
+								additional cost
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/bacon-cheeseburger.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Bacon Cheeseburger</h3>
+							<p>Served with fries, mayonnaise, lettuce, tomatoes, onions, and pickles</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/mushroom-swiss.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Mushroom Swiss Burger</h3>
+							<p>Served with fries, mayonnaise, lettuce, tomatoes, onions, and pickles</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="desserts" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Desserts</h2>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/tiramisu.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Tiramisu</h3>
+							<p>One tray</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/chocolate-mousse.avif" alt="" />
+						</div>
+						<div class="description">
+							<h3>Chocolate Mousse Cake</h3>
+							<p>Elegant, moist and delicious</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/cheesecake.webp" alt="" />
+						</div>
+						<div class="description">
+							<h3>Cheesecake</h3>
+							<p>Strawberry or new york plain</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/cannoli.jpeg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Cannoli</h3>
+							<p>Crisp and flakey cream filled cannolis</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-2">
+					<div class="article">
+						<div class="menu-img">
+							<img src="images/rum-cake.jpg" alt="" />
+						</div>
+						<div class="description">
+							<h3>Italian Rum Cake</h3>
+							<p>Moist, delicious and a little spicy</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="bevs" class="anchor"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<h2 class="flag-border">Beverages</h2>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<h3>Soft Drinks</h3>
+						</li>
+						<li class="text-center">Coke, Diet Coke, Sprite, Dr. Pepper, Root Beer</li>
+
+						<li class="text-center"><h3>To-Go 2-Liters</h3></li>
+						<li class="text-center">Coke, Diet Coke, Sprite, Root Beer</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<h3>Non-Carbonated</h3>
+						</li>
+						<li class="text-center"><b>Caffeinated</b></li>
+						<li class="text-center">Coffee, Hot Tea</li>
+						<li class="text-center"><b>Decaf</b></li>
+						<li class="text-center">Coffee, Iced Tea, Sweet Tea</li>
+						<li class="text-center"><b>Juice</b></li>
+						<li class="text-center">Orange, Cranberry, Lemonade</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-2 col-lg-2">
+					<ul class="unstyled">
+						<li class="text-center">
+							<h3>Alcohol</h3>
+						</li>
+						<li class="text-center"><b>Red Wine</b></li>
+						<li class="text-center">
+							Chianti Frescobaldi, Red Rock Merlot, Sangiovese, Gascon Malbec, Mirassou Pinot Noir, Lambrusco,
+							Brancaia Tre Toscana
+						</li>
+						<li class="text-center"><b>White Wine</b></li>
+						<li class="text-center">
+							William Hill Chardonnay, Ecco Domani Pinot Grigio, Moscato Allegro, Sauvignon Blanc, White Zinfandel,
+							Prosecco, Covey Run Riesling
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 		<?php echo $footer ?>
 		<!-- This wont work on replit -->
@@ -185,8 +1303,8 @@
 				<h3>Main Pages</h3>
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="menu.html">Menu</a></li>
 					<li><a href="about.html">About Us</a></li>
+					<li><a href="promos.html">Promotions</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 					<li><a href="order.html">Order Online</a></li>
 				</ul>
@@ -210,41 +1328,6 @@
 				</div>
 			</div>
 		</footer>
-		<script>
-			const plusButtons = document.querySelectorAll(".plus");
-			const minusButtons = document.querySelectorAll(".minus");
-			const quantityInputs = document.querySelectorAll(".num");
-
-			plusButtons.forEach((plusButton, index) => {
-				plusButton.addEventListener("click", () => {
-					let a = parseInt(quantityInputs[index].innerText) + 1;
-					a = a < 10 ? "0" + a : a;
-					quantityInputs[index].innerText = a;
-				});
-			});
-
-			minusButtons.forEach((minusButton, index) => {
-				minusButton.addEventListener("click", () => {
-					// Ensure quantity doesn't go below 1
-					let newQuantity = Math.max(parseInt(quantityInputs[index].innerText) - 1, 1);
-					quantityInputs[index].innerText = newQuantity < 10 ? "0" + newQuantity : newQuantity;
-				});
-			});
-
-			let loadMoreBtn = document.querySelector("#load-more");
-			let currentItem = 3;
-
-			loadMoreBtn.onclick = () => {
-				let boxes = [...document.querySelectorAll(".box")];
-				for (var i = currentItem; i < currentItem + 3; i++) {
-					boxes[i].style.display = "inherit";
-				}
-				currentItem += 3;
-
-				if (currentItem >= boxes.length) {
-					loadMoreBtn.style.display = "none";
-				}
-			};
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
