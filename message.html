@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About Us - Roma's</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us - Roma's</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
 	</head>
 
 	<body>
-		<?php echo $nav ?> 
+		<?php echo $nav ?>
 		<!-- This wont work on replit -->
 
 		<div class="container nav-container">
@@ -18,7 +21,11 @@
 				<div class="col-xs-6">
 					<nav class="navbar">
 						<a class="navbar-brand" href="index.html">Navbar</a>
-						<button class="navbar-toggler" type="button" data-target="#navigation">
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-target="#navigation"
+						>
 							<span class="fa-solid fa-bars fa-xl"></span>
 						</button>
 
@@ -27,14 +34,16 @@
 								<li>
 									<a href="index.html">Home</a>
 								</li>
-								<li class="active">
-									<a href="about.html">About Us <span class="sr-only">(current)</span></a>
+								<li>
+									<a href="about.html">About Us</a>
 								</li>
 								<li>
 									<a href="promos.html">Promotions</a>
 								</li>
 								<li>
-									<a href="contact.html">Contact Us</a>
+									<a href="contact.html"
+										>Contact Us <span class="sr-only">(current)</span></a
+									>
 								</li>
 
 								<li>
@@ -46,47 +55,23 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="about-banner">
-		<h1>About Us</h1>
+		<div class="msg-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<h1 class="letter-spacing">Thank You!</h1>
+						<h2>
+							We have recieved your message and look forward to talking with
+							you. We will try our best to get back to you as soon as possible!
+						</h2>
+						<div class="msg-btns">
+							<a class="btn btn-primary" href="index.html">Back to Home Page</a>
+							<a class="btn btn-secondary" href="order.html">Order Online</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<br></br>
-
-		<section class="about about-text">
-		<div class="about-text-container">
-			<h2>About Us</h2>
-			<p>Roma's Pizza is all about creating lasting memories with the people you love. Our casual atmosphere makes
-			everyone feel right at home, whether it's a date night, a family gathering, or a catch-up with friends.</p>
-		</div>
-		<div class="about-image-container">
-			<img src="images/firstsecone.jpg" alt="About Image">
-		</div>
-		</section>
-
-		<hr>
-		<section class="aboutoptions">
-		<img src="images/foodoptions.png" alt="Banner" class="food-banner">
-		</section>
-		<hr>
-
-		<section class="about-facts">
-		<div class="fact-item">
-			<img src="images/fact1.png" alt="Fact 1">
-		</div>
-		<div class="fact-item">
-			<img src="images/fact2.png" alt="Fact 2">
-		</div>
-		<div class="fact-item">
-			<img src="images/fact3.png" alt="Fact 3">
-		</div>
-		<div class="fact-item">
-			<img src="images/fact4.png" alt="Fact 4">
-		</div>
-		</section>
-
-		<?php echo $footer ?> <!-- This wont work on replit -->
-
 		<footer class="message-footer">
 			<div class="container company-details no-pattern">
 				<div class="row btm-pad">
@@ -204,8 +189,7 @@
 		<a href="#" class="to-top">
 			<i class="fa-solid fa-angles-up"></i>
 		</a>
-
 		<script src="script.js"></script>
+		<script src="contact.js"></script>
 	</body>
-
 </html>
