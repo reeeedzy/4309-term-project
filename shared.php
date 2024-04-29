@@ -13,8 +13,8 @@ $nav = '
 
     <div class="navigation collapse" id="navigation">
         <ul class="navbar-nav">
-            <li class="active">
-                <a href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li>
+                <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="about.html">About Us</a>
