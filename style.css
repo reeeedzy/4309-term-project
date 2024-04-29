@@ -1359,28 +1359,27 @@ li a i:hover {
 	justify-content: center;
 }
 
-.about-text-container {
-	width: 40%;
-	padding: 10px;
+.row.about-section {
+	flex-flow: row-reverse;
 }
 
-.about-image-container {
-	width: 40%;
-	padding-left: 20px;
+.about-h2.flag-border {
+	text-align: left;
+	padding: 0;
+	padding-bottom: 2%;
+	padding-left: 0.5rem;
 }
 
 .about-image-container img {
-	width: 80%;
+	width: 100%;
 	height: auto;
-	margin-bottom: 20px;
-	border: 4px solid #008c45;
-	border-radius: 10%;
+	border: 3px solid #008c45;
+	border-radius: 10px;
 }
 
 .about-text-container p {
-	border-top: 2px solid #cd121a;
-	padding-top: 10px;
-	line-height: 1.35rem;
+	padding-left: 0.5rem;
+	line-height: var(--base-line-height);
 }
 
 .about-facts {
@@ -1412,6 +1411,7 @@ li a i:hover {
 	justify-content: center;
 	align-items: center;
 	color: var(--font-color);
+	text-align: center;
 }
 
 .promo-banner::before {
@@ -1430,15 +1430,13 @@ li a i:hover {
 	z-index: 1;
 }
 
-.promofirst {
-	display: flex;
-	justify-content: center;
-	padding: 40px 40px;
+.promo-div2 {
+	align-self: center;
+	margin-top: 2rem;
 }
 
-.promofirst__text {
-	flex: 30%;
-	padding-right: 20px;
+.promo-cont {
+	margin-top: 1rem;
 }
 
 .promofirst__text h2 {
@@ -1446,9 +1444,8 @@ li a i:hover {
 }
 
 .promofirst__text p {
-	position: relative;
 	padding-top: 10px;
-	line-height: 1.35rem;
+	line-height: 1.5rem;
 }
 
 .promofirst__text p::before {
@@ -1458,11 +1455,7 @@ li a i:hover {
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #cd121a;
-}
-
-.promofirst__image {
-	flex: 70%;
+	background-color: var(--secondary);
 }
 
 .promofirst__image img {
@@ -1470,17 +1463,9 @@ li a i:hover {
 	height: auto;
 }
 
-.promosecond {
-	text-align: center;
-}
-
-.promosecond__image {
-	display: inline-block;
-	margin: 0 10px;
-}
-
 .promosecond__image img {
 	max-width: 100%;
+	height: auto;
 }
 
 /* Grid System */
