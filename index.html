@@ -1,8 +1,12 @@
+<?php
+  include ('shared.php');
+?>
+<!-- This wont work on replit -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home - Roma's</title>
 		<link rel="stylesheet" href="style.css" />
@@ -31,16 +35,16 @@
 
 						<div class="navigation collapse" id="navigation">
 							<ul class="navbar-nav">
-								<li>
-									<a href="index.html">Home</a>
+								<li class="active">
+									<a href="index.html"
+										>Home <span class="sr-only">(current)</span></a
+									>
 								</li>
 								<li>
 									<a href="about.html">About Us</a>
 								</li>
-								<li class="active">
-									<a href="promos.html"
-										>Promotions <span class="sr-only">(current)</span></a
-									>
+								<li>
+									<a href="promos.html">Promotions</a>
 								</li>
 								<li>
 									<a href="contact.html">Contact Us</a>
@@ -70,84 +74,94 @@
 			<button class="carousel-button next">&#10095;</button>
 		</div>
 
-		<section class="fstsect">
-			<div class="fstsect__text-container">
-				<h2>Start Ordering Online</h2>
-				<h3>Convenient Online Ordering</h3>
-				<p>
-					Order your favorite dishes from Roma's Pizza online and enjoy the
-					convenience of quick delivery or easy pickup. Explore our menu and
-					place your order today!
-				</p>
-			</div>
-			<div class="fstsect__image-container">
-				<img src="images/pizzabut.png" alt="Image Description" />
-				<a href="order.html" class="button">Order Online</a>
-			</div>
-		</section>
-
-		<section class="fstsect second-fstsect">
-			<div class="fstsect__image-container">
-				<img src="images/saladbut.webp" alt="Image Description" />
-				<a href="about.html" class="button">About Us</a>
-			</div>
-			<div class="fstsect__text-container">
-				<h2>Discover More About Roma's</h2>
-				<h3>A Warm Welcome for Every Table</h3>
-				<p>
-					At Roma's Pizza, we're more than just a restaurant. We're a community
-					gathering place where friends and family come together to enjoy
-					delicious food and create lasting memories. Our casual atmosphere
-					ensures everyone feels at home, whether it's a date night, family
-					gathering, or catch-up with friends. With our unwavering commitment to
-					quality and service, we look forward to welcoming you to our table.
-				</p>
-			</div>
-		</section>
-
-		<hr />
-		<br />
-		<section class="testimonial-carousel">
-			<h2>Hear from Actual Customers!</h2>
-			<div class="carousel">
-				<div class="carousel-slides">
-					<img src="images/lane.jpg" alt="Testimonial 1" />
-					<img src="images/jess.jpg" alt="Testimonial 2" />
-					<img src="images/eric.jpg" alt="Testimonial 3" />
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<section class="fstsect">
+						<div class="fstsect__text-container">
+							<h2>Start Ordering Online</h2>
+							<h3>Convenient Online Ordering</h3>
+							<p>
+								Order your favorite dishes from Roma's Pizza online and enjoy
+								the convenience of quick delivery or easy pickup. Explore our
+								menu and place your order today!
+							</p>
+						</div>
+						<div class="fstsect__image-container">
+							<img src="images/pizzabut.png" alt="Image Description" />
+							<a href="order.html" class="button">Order Online</a>
+						</div>
+					</section>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-			</div>
-		</section>
-		<br />
-		<hr />
-		<br />
-		<section class="second-section">
-			<div class="second-section__content">
-				<h1 class="vip-heading">Join our VIP Diners Club</h1>
-				<h2>Text ROMAS to (214) 256-4112</h2>
-				<br />
-				<div class="half-line"></div>
-				<br />
-				<h1 class="social-offers-heading">Follow us on Our Social Media!</h1>
-				<h2>Get Exclusive Deals, Offers and Rewards!</h2>
-				<div class="second-section__icons">
-					<a
-						href="https://www.facebook.com/your-restaurant-page"
-						target="_blank"
-						><i class="fab fa-facebook-f"></i
-					></a>
-					<a href="https://www.twitter.com/your-restaurant-page" target="_blank"
-						><i class="fab fa-x-twitter"></i
-					></a>
-					<a
-						href="https://www.instagram.com/your-restaurant-page"
-						target="_blank"
-						><i class="fab fa-instagram"></i
-					></a>
+				<div class="col-xs-6">
+					<section class="fstsect second-fstsect">
+						<div class="fstsect__image-container">
+							<img src="images/saladbut.webp" alt="Image Description" />
+							<a href="order.html" class="button">Order Online</a>
+						</div>
+						<div class="fstsect__text-container">
+							<h2>Discover More About Roma's</h2>
+							<h3>A Warm Welcome for Every Table</h3>
+							<p>
+								Roma's Pizza is all about creating lasting memories with the
+								people you love. Our casual atmosphere makes everyone feel right
+								at home, whether it's a date night, a family gathering, or a
+								catch-up with friends.
+							</p>
+						</div>
+					</section>
+				</div>
+				<div class="col-xs-6">
+					<section class="testimonial-carousel">
+						<h2>Hear from Actual Customers!</h2>
+						<div class="carousel">
+							<div class="carousel-slides">
+								<img src="images/lane.jpg" alt="Testimonial 1" />
+								<img src="images/jess.jpg" alt="Testimonial 2" />
+								<img src="images/eric.jpg" alt="Testimonial 3" />
+							</div>
+							<button class="prev">&#10094;</button>
+							<button class="next">&#10095;</button>
+						</div>
+					</section>
 				</div>
 			</div>
-		</section>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<section class="second-section">
+						<div class="second-section__content">
+							<h1 class="vip-heading">Join our VIP Diners Club</h1>
+							<h2 class="flag-border">Text ROMAS to (214) 256-4112</h2>
+
+							<h1 class="social-offers-heading">
+								Follow us on Our Social Media!
+							</h1>
+							<h2>Get Exclusive Deals, Offers and Rewards!</h2>
+							<div class="second-section__icons">
+								<a
+									href="https://www.facebook.com/your-restaurant-page"
+									target="_blank"
+									><i class="fab fa-facebook-f"></i
+								></a>
+								<a
+									href="https://www.twitter.com/your-restaurant-page"
+									target="_blank"
+									><i class="fab fa-x-twitter"></i
+								></a>
+								<a
+									href="https://www.instagram.com/your-restaurant-page"
+									target="_blank"
+									><i class="fab fa-instagram"></i
+								></a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
 
 		<div style="height: 10px"></div>
 
