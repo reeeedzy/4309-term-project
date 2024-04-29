@@ -318,6 +318,15 @@ img {
 }
 
 /* *Navigation Styles */
+.nav-wrapper {
+	background-color: var(--bg-color2);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	.container.nav-container {
+		margin-bottom: 0;
+	}
+}
+
 .navbar {
 	display: flex;
 	flex-flow: row wrap;
