@@ -1,60 +1,153 @@
 <?php
 
 $nav = '
-<div class="navbar">
-  <div class="navbar-logo">
-    <a href="index.html">
-      <img src="images/logo.png" alt="Logo">
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="menu.html" class="nav-item">Menu</a>
-    <a href="about.html" class="nav-item">About Us</a>
-    <a href="promos.html" class="nav-item">Promotions</a>
-    <a href="contact.html" class="nav-item">Contact Us</a>
-    <a href="#" class="nav-item">
-      <button class="nav-button">Order Online</button>
-    </a>
-  </div>
-</div>';
+<nav class="navbar">
+    <a class="navbar-brand" href="index.html">Navbar</a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-target="#navigation"
+    >
+        <span class="fa-solid fa-bars fa-xl"></span>
+    </button>
+
+    <div class="navigation collapse" id="navigation">
+        <ul class="navbar-nav">
+            <li class="active">
+                <a href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="promos.html">Promotions</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+                <a class="order" href="order.html">Order Online</a>
+            </li>
+        </ul>
+    </div>
+</nav>';
 
 $footer = '
-<footer class="footer">
-  <div class="footer-column">
-    <h3>Contact</h3>
-    <p>7033 Greenville Ave</p>
-    <p>Dallas, TX 75231</p>
-    <p>Phone: (214) 373-0500</p>
-    <p>Email: <a href="mailto:manager@romasdallas.com">manager@romasdallas.com</a></p>
-  </div>
-  <div class="footer-column">
-    <h3>Main Pages</h3>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Order Online</a></li>
-    </ul>
-  </div>
-  <div class="footer-column">
-    <h3>Hours</h3>
-    <p>Tuesday - Sunday: 10 a.m. - 10:30 p.m.</p>
-    <p>Monday: Closed</p>
-  </div>
-  <div class="footer-column">
-    <h3>Newsletter</h3>
-    <p>Sign up for our newsletter to receive updates and promotions:</p>
-    <form action="#" method="post">
-      <input type="email" name="email" placeholder="Your Email" required>
-      <button type="submit" class="nav-button">Subscribe</button>
-    </form>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+<footer class="message-footer">
+    <div class="container company-details no-pattern">
+        <div class="row btm-pad">
+            <div class="col-xs-6 col-md-3 col-lg-2">
+                <h3 class="footer-header">Roma\'s Pizza & Italian Restaurant</h3>
+                <p class="footer-p">
+                    Here at Roma\'s, we care about creating lasting memories with the
+                    people you love. Our casual atmosphere makes everyone feel right
+                    at home, whether it\'s a date night, a family gathering, or a
+                    catch-up with friends.
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-2">
+                <h3 class="footer-header">Directions</h3>
+                <iframe
+                    class="googlemap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11270.991741326021!2d-96.76862973841374!3d32.874734710868836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c20bc20539d65%3A0x6b69d112fef285d7!2sRoma&#39;s%20Pizza%20%26%20Italian%20Restaurant!5e0!3m2!1sen!2sus!4v1712776834299!5m2!1sen!2sus"
+                    width="380"
+                    height="170"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-1">
+                <h3 class="footer-header">Hours</h3>
+                <ul class="unstyled big-links footer-hours">
+                    <li id="green">
+                        <b>10:00 AM - 10:30 PM</b>
+                    </li>
+                    <li><b>Tuesday - Sunday</b></li>
+                </ul>
+                <ul class="unstyled big-links footer-hours">
+                    <li id="red"><b>Closed on Monday</b></li>
+                </ul>
+                <a
+                    class="btn btn-secondary"
+                    href="order.html"
+                    title="Read more on our Contact Page"
+                    >Order Online</a
+                >
+            </div>
+            <div class="col-xs-6 col-md-3 col-lg-1">
+                <h3 class="footer-header">Contact Us</h3>
+                <ul class="unstyled inline big-links">
+                    <li class="footer-icons">
+                        <a href="tel:(214)-373-0500" target="_blank"
+                            ><i class="fa-solid fa-phone"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="links" href="tel:(214)-373-0500" target="_blank"
+                            >(214)-373-0500</a
+                        >
+                    </li>
+                </ul>
+                <ul class="unstyled inline big-links">
+                    <li>
+                        <a
+                            class="footer-icons"
+                            href="mailto:manager@romasdallas.com"
+                            target="_blank"
+                            ><i class="fa-regular fa-envelope"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="links" href="mailto:manager@romasdallas.com"
+                            >Email Us</a
+                        >
+                    </li>
+                </ul>
+                <a
+                    class="btn btn-primary"
+                    href="contact.html"
+                    title="Read more on our Contact Page"
+                    >More Info</a
+                >
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="copyright">
+        <div class="container copy">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <p class="copyright-text">
+                        &copy; 2024 Roma\'s Pizza & Italian Restaurant - All pages are
+                        mock ups, created by Michael Pacheco and Reed Turner for our
+                        4309 Internet Marketing term project.
+                    </p>
+                </div>
+                <div class="col-xs-6 col-md-2">
+                    <ul class="inline social-media">
+                        <li>
+                            <a
+                                href="https://www.instagram.com/romasitaliadallas/?hl=en"
+                                target="_blank"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/RomasDallas" target="_blank"
+                                ><i class="fa-brands fa-facebook"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="mailto:manager@romasdallas.com" target="_blank"
+                                ><i class="fa-regular fa-envelope"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>';
 
 ?>
