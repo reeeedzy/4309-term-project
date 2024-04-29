@@ -1375,6 +1375,15 @@ li a i:hover {
 	max-width: 100%;
 }
 
+.promosecond {
+	display: flex;
+}
+
+.promosecond__image {
+	flex: 1;
+	margin: 0 10px;
+}
+
 /* Grid System */
 .container-fluid,
 .container {
@@ -1796,6 +1805,16 @@ li a i:hover {
 		display: block;
 		margin: 20px auto;
 		max-width: 80%;
+	}
+
+	.promosecond {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.promosecond__image {
+		display: inline-block;
+		margin: 0 0 20px 0;
 	}
 }
 
