@@ -1,68 +1,89 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const articles = document.querySelectorAll('.article');
+	const plusButtons = document.querySelectorAll('.plus-span');
+	const minusButtons = document.querySelectorAll('.minus-span');
+	const addButton = document.querySelectorAll('.add');
+	const aside = document.getElementById('cart-aside');
+	let cartItems = document.getElementById('cart-items');
 
-	articles.forEach(function (article) {
-		const addButton = article.querySelector('#add');
-		const minusButton = article.querySelector('.minus');
-		const plusButton = article.querySelector('.plus');
-		const numElement = article.querySelector('.num');
-		const priceElement = article.querySelector('.order-image-txt p');
-
-		let quantity = 1;
-
-		// Function to update quantity and display
-		function updateQuantityDisplay() {
-			numElement.textContent = quantity;
-		}
-
-		// Function to update total price
-		function updateTotalPrice() {
-			const price = parseFloat(priceElement.textContent.slice(1)); // Remove the $
-			const totalPrice = price * quantity;
-			return totalPrice;
-		}
-
-		// Function to handle click on plus button
-		plusButton.addEventListener('click', function () {
-			quantity++;
-			updateQuantityDisplay();
-		});
-
-		// Function to handle click on minus button
-		minusButton.addEventListener('click', function () {
-			if (quantity > 1) {
-				quantity--;
-				updateQuantityDisplay();
-			}
-		});
-
-		// Function to handle add to cart button click
-		addButton.addEventListener('click', function (event) {
-			event.preventDefault(); // Prevent form submission
-
-			// Create an object with item details
-			const item = {
-				name: article.querySelector('h3').textContent,
-				quantity: quantity,
-				price: updateTotalPrice(),
-			};
-
-			// Process the item or store it in cart
-			addToCart(item);
+	plusButtons.forEach((button, index) => {
+		button.addEventListener('click', function () {
+			let quantitySpan = button.parentElement.querySelector('.num-span');
+			let currentValue = parseInt(quantitySpan.textContent);
+			quantitySpan.textContent = currentValue + 1;
 		});
 	});
 
-	// Function to process the item and add it to the cart
-	function addToCart(item) {
-		const cart = document.getElementById('cart');
-		if (cart) {
-			const itemInfo = document.createElement('div');
-			itemInfo.innerHTML = `<p>${item.name} - Quantity: ${
-				item.quantity
-			} - Price: $${item.price.toFixed(2)}</p>`;
-			cart.appendChild(itemInfo);
-		} else {
-			console.error('Cart element not found.');
-		}
+	minusButtons.forEach((button, index) => {
+		button.addEventListener('click', function () {
+			let quantitySpan = button.parentElement.querySelector('.num-span');
+			let currentValue = parseInt(quantitySpan.textContent);
+			if (currentValue > 1) {
+				quantitySpan.textContent = currentValue - 1;
+			}
+		});
+	});
+
+	addButton.forEach((button) => {
+		button.addEventListener('click', function (event) {
+			event.preventDefault();
+			const menuItem = event.target.closest('.article');
+			const itemName = menuItem.querySelector('h3').textContent;
+			const itemPrice = parseFloat(
+				menuItem.querySelector('p').textContent.replace('$', '')
+			);
+			const itemQuantity = parseInt(
+				menuItem.querySelector('.num-span').textContent
+			);
+			const totalPrice = itemPrice * itemQuantity;
+
+			// Create table row for the item
+			const row = document.createElement('tr');
+			row.innerHTML = `
+                <td><p>${itemName}</p></td>
+                <td><input type="number" value="${itemQuantity}" min="1" class="item-quantity" /></td>
+                <td><p>$${itemPrice.toFixed(2)}</p></td>
+                <td><p class="total-price"><b>$${totalPrice.toFixed(
+									2
+								)}</b></p></td>
+            `;
+			if (!cartItems) {
+				cartItems = document.createElement('tbody');
+				cartItems.id = 'cart-items';
+				document.querySelector('table').appendChild(cartItems);
+			}
+			cartItems.appendChild(row);
+
+			// Show aside with sliding animation
+			aside.classList.add('show');
+
+			// Listen for changes in quantity input fields
+			const quantityInput = row.querySelector('.item-quantity');
+			quantityInput.addEventListener('input', function () {
+				const newQuantity = parseInt(quantityInput.value);
+				const newTotalPrice = itemPrice * newQuantity;
+				row.querySelector('.total-price b').textContent =
+					'$' + newTotalPrice.toFixed(2);
+				updateTotalPrice();
+			});
+		});
+	});
+
+	document.getElementById('purchase').addEventListener('click', function () {
+		// Implement purchase functionality here
+		alert('Purchase completed!');
+		// Clear the cart
+		cartItems.innerHTML = '';
+		// Hide aside with sliding animation
+		aside.classList.remove('show');
+	});
+
+	function updateTotalPrice() {
+		let totalCartPrice = 0;
+		const totalPriceElements = document.querySelectorAll('.total-price b');
+		totalPriceElements.forEach((element) => {
+			totalCartPrice += parseFloat(element.textContent.replace('$', ''));
+		});
+		document.getElementById('total-price').textContent =
+			'$' + totalCartPrice.toFixed(2);
 	}
 });
