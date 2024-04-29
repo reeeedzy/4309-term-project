@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 			cartItems.appendChild(row);
 
-			// Show aside with sliding animation
 			aside.classList.add('show');
 
 			// Listen for changes in quantity input fields
@@ -69,11 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	document.getElementById('purchase').addEventListener('click', function () {
-		// Implement purchase functionality here
 		alert('Purchase completed!');
-		// Clear the cart
 		cartItems.innerHTML = '';
-		// Hide aside with sliding animation
 		aside.classList.remove('show');
 	});
 
