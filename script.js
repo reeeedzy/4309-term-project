@@ -79,6 +79,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Automatic slide change for testimonial carousel (every 8 seconds)
 	setInterval(nextTestimonialSlide, 8000);
+
+	// Show or hide Friday slide based on the current day
+	const currentDate = new Date();
+	const currentDay = currentDate.getDay();
+
+	// Check if it's Friday (index 5)
+	if (currentDay === 5) {
+		// It's Friday, show fridayslide
+		slides[2].querySelector('img').src = 'images/fridayslide.png';
+	} else {
+		// It's not Friday, show slide3
+		slides[2].querySelector('img').src = 'images/slide3.png';
+	}
 });
 // Navigation Interactions
 // Toggle the mobile icon to show and hide the main navigation
