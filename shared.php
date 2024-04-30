@@ -6,7 +6,7 @@ $nav = '
 				<div class="row">
 					<div class="col-xs-6">
 						<nav class="navbar">
-							<a class="navbar-brand" href="index.html">Navbar</a>
+							<a class="navbar-brand" href="index.php">Navbar</a>
 							<button
 								class="navbar-toggler"
 								type="button"
@@ -18,22 +18,22 @@ $nav = '
 							<div class="navigation collapse" id="navigation">
 								<ul class="navbar-nav">
 									<li class="active">
-										<a href="index.html"
+										<a href="index.php"
 											>Home <span class="sr-only">(current)</span></a
 										>
 									</li>
 									<li>
-										<a href="about.html">About Us</a>
+										<a href="about.php">About Us</a>
 									</li>
 									<li>
-										<a href="promos.html">Promotions</a>
+										<a href="promos.php">Promotions</a>
 									</li>
 									<li>
-										<a href="contact.html">Contact Us</a>
+										<a href="contact.php">Contact Us</a>
 									</li>
 
 									<li>
-										<a class="order" href="order.html">Order Online</a>
+										<a class="order" href="order.php">Order Online</a>
 									</li>
 								</ul>
 							</div>
