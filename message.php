@@ -1,3 +1,7 @@
+<?php
+include ('shared.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
