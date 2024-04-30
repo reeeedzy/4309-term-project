@@ -17,9 +17,9 @@ $nav = '
 
 							<div class="navigation collapse" id="navigation">
 								<ul class="navbar-nav">
-									<li class="active">
+									<li>
 										<a href="index.php"
-											>Home <span class="sr-only">(current)</span></a
+											>Home</a
 										>
 									</li>
 									<li>

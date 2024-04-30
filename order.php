@@ -25,7 +25,7 @@ include ('shared.php');
 				<div class="row">
 					<div class="col-xs-6">
 						<nav class="navbar">
-							<a class="navbar-brand" href="index.html">Navbar</a>
+							<a class="navbar-brand" href="index.php">Navbar</a>
 							<button
 								class="navbar-toggler"
 								type="button"
@@ -37,20 +37,20 @@ include ('shared.php');
 							<div class="navigation collapse" id="navigation">
 								<ul class="navbar-nav">
 									<li>
-										<a href="index.html">Home</a>
+										<a href="index.php">Home</a>
 									</li>
 									<li>
-										<a href="about.html">About Us</a>
+										<a href="about.php">About Us</a>
 									</li>
 									<li>
-										<a href="promos.html">Promotions</a>
+										<a href="promos.php">Promotions</a>
 									</li>
 									<li>
-										<a href="contact.html">Contact Us</a>
+										<a href="contact.php">Contact Us</a>
 									</li>
 
 									<li>
-										<a class="order" href="order.html"
+										<a class="order" href="order.php"
 											>Order Online <span class="sr-only">(current)</span></a
 										>
 									</li>
@@ -1770,7 +1770,7 @@ include ('shared.php');
 					<ul class="unstyled big-links footer-hours">
 						<li id="red"><b>Closed on Monday</b></li>
 					</ul>
-					<a class="btn btn-secondary" href="order.html" title="Read more on our Contact Page">Order
+					<a class="btn btn-secondary" href="order.php" title="Read more on our Contact Page">Order
 						Online</a>
 				</div>
 				<div class="col-xs-6 col-md-3 col-lg-1">
@@ -1792,7 +1792,7 @@ include ('shared.php');
 							<a class="links" href="mailto:manager@romasdallas.com">Email Us</a>
 						</li>
 					</ul>
-					<a class="btn btn-primary" href="contact.html" title="Read more on our Contact Page">More Info</a>
+					<a class="btn btn-primary" href="contact.php" title="Read more on our Contact Page">More Info</a>
 				</div>
 			</div>
 		</div>

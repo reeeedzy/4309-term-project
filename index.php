@@ -23,7 +23,7 @@ include ('shared.php');
 				<div class="row">
 					<div class="col-xs-6">
 						<nav class="navbar">
-							<a class="navbar-brand" href="index.html">Navbar</a>
+							<a class="navbar-brand" href="index.php">Navbar</a>
 							<button
 								class="navbar-toggler"
 								type="button"
@@ -35,22 +35,22 @@ include ('shared.php');
 							<div class="navigation collapse" id="navigation">
 								<ul class="navbar-nav">
 									<li class="active">
-										<a href="index.html"
+										<a href="index.php"
 											>Home <span class="sr-only">(current)</span></a
 										>
 									</li>
 									<li>
-										<a href="about.html">About Us</a>
+										<a href="about.php">About Us</a>
 									</li>
 									<li>
-										<a href="promos.html">Promotions</a>
+										<a href="promos.php">Promotions</a>
 									</li>
 									<li>
-										<a href="contact.html">Contact Us</a>
+										<a href="contact.php">Contact Us</a>
 									</li>
 
 									<li>
-										<a class="order" href="order.html">Order Online</a>
+										<a class="order" href="order.php">Order Online</a>
 									</li>
 								</ul>
 							</div>
@@ -89,7 +89,7 @@ include ('shared.php');
 					</div>
 					<div class="fstsect__image-container">
 						<img src="images/pizzabut.png" alt="Image Description" />
-						<a href="order.html" class="btn btn-secondary">Order Online</a>
+						<a href="order.php" class="btn btn-secondary">Order Online</a>
 					</div>
 				</section>
 			</div>
@@ -97,7 +97,7 @@ include ('shared.php');
 				<section class="fstsect second-fstsect">
 					<div class="fstsect__image-container">
 						<img src="images/saladbut.webp" alt="Image Description" />
-						<a href="about.html" class="btn btn-primary">About Us</a>
+						<a href="about.php" class="btn btn-primary">About Us</a>
 					</div>
 					<div class="fstsect__text-container">
 						<h2>Discover More About Roma's</h2>
@@ -191,7 +191,7 @@ include ('shared.php');
 					<ul class="unstyled big-links footer-hours">
 						<li id="red"><b>Closed on Monday</b></li>
 					</ul>
-					<a class="btn btn-secondary" href="order.html" title="Read more on our Contact Page">Order
+					<a class="btn btn-secondary" href="order.php" title="Read more on our Contact Page">Order
 						Online</a>
 				</div>
 				<div class="col-xs-6 col-md-3 col-lg-1">
@@ -213,7 +213,7 @@ include ('shared.php');
 							<a class="links" href="mailto:manager@romasdallas.com">Email Us</a>
 						</li>
 					</ul>
-					<a class="btn btn-primary" href="contact.html" title="Read more on our Contact Page">More Info</a>
+					<a class="btn btn-primary" href="contact.php" title="Read more on our Contact Page">More Info</a>
 				</div>
 			</div>
 		</div>
