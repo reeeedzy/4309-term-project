@@ -224,7 +224,7 @@ include ('shared.php');
 						<p class="copyright-text">
 							&copy; 2024 Roma's Pizza & Italian Restaurant - All pages are
 							mock ups, created by Michael Pacheco and Reed Turner for our
-							4309 Internet Marketing term project.
+							4309 Internet Marketing term project. <a href="policy.php">Privacy Policy</a>
 						</p>
 					</div>
 					<div class="col-xs-6 col-md-2">
