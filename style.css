@@ -1430,17 +1430,16 @@ li a i:hover {
 	z-index: 1;
 }
 
-.promo-div2 {
-	align-self: center;
-	margin-top: 2rem;
-}
-
 .promo-cont {
 	margin-top: 1rem;
 }
 
 .promofirst__text h2 {
 	margin-bottom: 10px;
+}
+
+.row.promo-row {
+	flex-direction: row-reverse;
 }
 
 .promofirst__text p {
